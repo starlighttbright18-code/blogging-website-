@@ -1,0 +1,939 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red255\green255\blue254;\red251\green0\blue7;
+\red0\green0\blue0;\red42\green42\blue42;\red107\green0\blue1;\red0\green0\blue255;\red144\green1\blue18;
+\red19\green118\blue70;\red15\green112\blue1;\red9\green60\blue148;\red14\green110\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c50196\c50196\c50196;\cssrgb\c100000\c100000\c99608;\cssrgb\c100000\c0\c0;
+\cssrgb\c0\c0\c0;\cssrgb\c21961\c21961\c21961;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c63922\c8235\c8235;
+\cssrgb\c3529\c52549\c34510;\cssrgb\c0\c50196\c0;\cssrgb\c1569\c31765\c64706;\cssrgb\c0\c50196\c50196;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 html\cf0 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf8 \strokec8 "en"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "scroll-smooth"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3   \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf8 \strokec8 "UTF-8"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "viewport"\cf0 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf8 \strokec8 "width=device-width, initial-scale=1.0"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \strokec5 Krishna Raninga | Personal Blog & Thoughts\cf6 \strokec6 </\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 link\cf0 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf8 \strokec8 "preconnect"\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "https://fonts.googleapis.com"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 link\cf0 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf8 \strokec8 "preconnect"\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "https://fonts.gstatic.com"\cf0 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 link\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"\cf0 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf8 \strokec8 "stylesheet"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     tailwind.config = \{\cb1 \
+\cb3       darkMode: \cf9 \strokec9 'class'\cf0 \strokec5 ,\cb1 \
+\cb3       theme: \{\cb1 \
+\cb3         extend: \{\cb1 \
+\cb3           fontFamily: \{\cb1 \
+\cb3             sans: [\cf9 \strokec9 '"Plus Jakarta Sans"'\cf0 \strokec5 , \cf9 \strokec9 'sans-serif'\cf0 \strokec5 ],\cb1 \
+\cb3             serif: [\cf9 \strokec9 '"Playfair Display"'\cf0 \strokec5 , \cf9 \strokec9 'serif'\cf0 \strokec5 ],\cb1 \
+\cb3           \},\cb1 \
+\cb3           colors: \{\cb1 \
+\cb3             brand: \{\cb1 \
+\cb3               \cf10 \strokec10 50\cf0 \strokec5 : \cf9 \strokec9 '#f0fdfa'\cf0 \strokec5 ,\cb1 \
+\cb3               \cf10 \strokec10 100\cf0 \strokec5 : \cf9 \strokec9 '#ccfbf1'\cf0 \strokec5 ,\cb1 \
+\cb3               \cf10 \strokec10 500\cf0 \strokec5 : \cf9 \strokec9 '#0d9488'\cf0 \strokec5 ,\cb1 \
+\cb3               \cf10 \strokec10 600\cf0 \strokec5 : \cf9 \strokec9 '#0f766e'\cf0 \strokec5 ,\cb1 \
+\cb3               \cf10 \strokec10 700\cf0 \strokec5 : \cf9 \strokec9 '#115e59'\cf0 \strokec5 ,\cb1 \
+\cb3               \cf10 \strokec10 900\cf0 \strokec5 : \cf9 \strokec9 '#134e4a'\cf0 \strokec5 ,\cb1 \
+\cb3             \}\cb1 \
+\cb3           \}\cb1 \
+\cb3         \}\cb1 \
+\cb3       \}\cb1 \
+\cb3     \}\cb1 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 /* Custom scrollbar and modal backdrop aesthetics */\cf0 \cb1 \strokec5 \
+\cb3     \cf7 \strokec7 ::-webkit-scrollbar\cf0 \strokec5  \{\cb1 \
+\cb3       \cf4 \strokec4 width:\cf0 \strokec5  \cf10 \strokec10 8px\cf0 \strokec5 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf7 \strokec7 ::-webkit-scrollbar-track\cf0 \strokec5  \{\cb1 \
+\cb3       \cf4 \strokec4 background:\cf0 \strokec5  \cf12 \strokec12 #f1f5f9\cf0 \strokec5 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf7 \strokec7 ::-webkit-scrollbar-thumb\cf0 \strokec5  \{\cb1 \
+\cb3       \cf4 \strokec4 background:\cf0 \strokec5  \cf12 \strokec12 #cbd5e1\cf0 \strokec5 ;\cb1 \
+\cb3       \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf10 \strokec10 4px\cf0 \strokec5 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf7 \strokec7 ::-webkit-scrollbar-thumb:hover\cf0 \strokec5  \{\cb1 \
+\cb3       \cf4 \strokec4 background:\cf0 \strokec5  \cf12 \strokec12 #94a3b8\cf0 \strokec5 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf7 \strokec7 .glass-card\cf0 \strokec5  \{\cb1 \
+\cb3       \cf4 \strokec4 background:\cf0 \strokec5  \cf12 \strokec12 rgba(\cf10 \strokec10 255\cf0 \strokec5 , \cf10 \strokec10 255\cf0 \strokec5 , \cf10 \strokec10 255\cf0 \strokec5 , \cf10 \strokec10 0.85\cf12 \strokec12 )\cf0 \strokec5 ;\cb1 \
+\cb3       \cf4 \strokec4 backdrop-filter:\cf0 \strokec5  \cf12 \strokec12 blur(\cf10 \strokec10 12px\cf12 \strokec12 )\cf0 \strokec5 ;\cb1 \
+\cb3       \cf4 \strokec4 -webkit-backdrop-filter:\cf0 \strokec5  \cf12 \strokec12 blur(\cf10 \strokec10 12px\cf12 \strokec12 )\cf0 \strokec5 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3     \cf7 \strokec7 .badge-glow\cf0 \strokec5  \{\cb1 \
+\cb3       \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf10 \strokec10 0\cf0 \strokec5  \cf10 \strokec10 0\cf0 \strokec5  \cf10 \strokec10 15px\cf0 \strokec5  \cf10 \strokec10 -3px\cf0 \strokec5  \cf12 \strokec12 rgba(\cf10 \strokec10 13\cf0 \strokec5 , \cf10 \strokec10 148\cf0 \strokec5 , \cf10 \strokec10 136\cf0 \strokec5 , \cf10 \strokec10 0.3\cf12 \strokec12 )\cf0 \strokec5 ;\cb1 \
+\cb3     \}\cb1 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 body\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans selection:bg-teal-500 selection:text-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3   \cf6 \strokec6 <\cf7 \strokec7 header\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-between h-20"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 <!-- Brand Identity -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#feed"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-3 group"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-11 h-11 rounded-2xl bg-gradient-to-tr from-teal-600 to-emerald-400 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform duration-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             KR\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 h1\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl font-bold tracking-tight text-slate-900 group-hover:text-teal-600 transition-colors"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               Krishna Raninga\cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 h1\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-slate-500 tracking-wide font-medium"\cf6 \strokec6 >\cf0 \strokec5 Bhavnagar &bull; Surat &bull; Web Developer\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- Desktop Navigation -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 nav\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#feed"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hover:text-teal-600 transition-colors"\cf6 \strokec6 >\cf0 \strokec5 Articles\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#about"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hover:text-teal-600 transition-colors"\cf6 \strokec6 >\cf0 \strokec5 About Author\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#topics"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hover:text-teal-600 transition-colors"\cf6 \strokec6 >\cf0 \strokec5 Explore Topics\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "openCreateModal()"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-xl font-medium shadow-md shadow-teal-500/20 active:scale-95 transition-all"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-4 h-4"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2.5"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M12 4v16m8-8H4"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             Write Blog\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 nav\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- Mobile Action Button -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "md:hidden flex items-center gap-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "openCreateModal()"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-teal-600 text-white p-2.5 rounded-xl shadow-sm hover:bg-teal-700"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2.5"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M12 4v16m8-8H4"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 header\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "about"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100 py-16 sm:py-20 border-b border-slate-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 <!-- Decorative background glow -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute -top-24 -left-20 w-96 h-96 bg-teal-200/40 rounded-full blur-3xl pointer-events-none"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute top-1/2 -right-20 w-96 h-96 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 <!-- Author Profile Details -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "lg:col-span-7 space-y-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/60 text-teal-800 text-xs font-semibold tracking-wide uppercase badge-glow"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-2 h-2 rounded-full bg-teal-500 animate-pulse"\cf6 \strokec6 ></\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             Official Student Portfolio & Blog\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cb1 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             Hi, I'm \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-500"\cf6 \strokec6 >\cf0 \strokec5 Krishna Raninga\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5 .\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg sm:text-xl text-slate-600 leading-relaxed font-normal"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             Welcome to my personal digital corner! Originally hailing from the cultural land of \cf6 \strokec6 <\cf7 \strokec7 strong\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-slate-800"\cf6 \strokec6 >\cf0 \strokec5 Bhavnagar\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5  and currently living & thriving in the diamond city of \cf6 \strokec6 <\cf7 \strokec7 strong\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-slate-800"\cf6 \strokec6 >\cf0 \strokec5 Surat, Gujarat\cf6 \strokec6 </\cf7 \strokec7 strong\cf6 \strokec6 >\cf0 \strokec5 .\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-slate-600 leading-relaxed text-base"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             I am passionate about full-stack web engineering, human-centric design, and technology narratives. This interactive blogging platform is crafted purely with core HTML, modern CSS, and JavaScript. Here, anyone can create posts, read stories, and share ideas.\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-wrap items-center gap-4 pt-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "openCreateModal()"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-3.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-semibold shadow-lg shadow-teal-600/25 active:scale-95 transition-all flex items-center gap-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               Publish an Article\cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#feed"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-slate-700 font-semibold border border-slate-200 shadow-sm transition-all"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               Explore Articles\cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf11 \strokec11 <!-- Quick facts highlights -->\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-3 gap-4 pt-4 border-t border-slate-200/80"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs uppercase tracking-wider font-semibold text-slate-400"\cf6 \strokec6 >\cf0 \strokec5 Roots\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm font-bold text-slate-800"\cf6 \strokec6 >\cf0 \strokec5 Bhavnagar, GJ\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs uppercase tracking-wider font-semibold text-slate-400"\cf6 \strokec6 >\cf0 \strokec5 Present City\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm font-bold text-slate-800"\cf6 \strokec6 >\cf0 \strokec5 Surat, GJ\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs uppercase tracking-wider font-semibold text-slate-400"\cf6 \strokec6 >\cf0 \strokec5 Tech Stack\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm font-bold text-teal-600"\cf6 \strokec6 >\cf0 \strokec5 HTML &bull; CSS &bull; JS\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- Author Card / Visual Badge -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "lg:col-span-5 flex justify-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full max-w-sm bg-white rounded-3xl p-6 shadow-xl border border-slate-200 relative overflow-hidden group hover:shadow-2xl transition-all duration-300"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "h-32 bg-gradient-to-r from-teal-500 to-emerald-600 rounded-2xl mb-12 relative"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute -bottom-8 left-6 w-20 h-20 rounded-2xl bg-white p-1 shadow-lg"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full h-full rounded-xl bg-slate-900 text-teal-400 flex items-center justify-center text-2xl font-bold font-serif"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                   KR\cb1 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute top-3 right-3 bg-white/30 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-full"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 Author & Student\cb1 \
+\cb3               \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl font-bold text-slate-900"\cf6 \strokec6 >\cf0 \strokec5 Krishna Raninga\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-slate-500 flex items-center gap-1.5"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-4 h-4 text-teal-600"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M15 11a3 3 0 11-6 0 3 3 0 016 0z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 Surat (Originally Bhavnagar)\cb1 \
+\cb3               \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-slate-600 leading-relaxed pt-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 "Code is poetry written with logic. Striving to turn conceptual thoughts into usable interactive experiences."\cb1 \
+\cb3               \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "pt-4 flex flex-wrap gap-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-lg font-medium"\cf6 \strokec6 >\cf0 \strokec5 Bhavnagar Native\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs bg-teal-50 text-teal-700 px-3 py-1 rounded-lg font-medium"\cf6 \strokec6 >\cf0 \strokec5 Frontend Dev\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-lg font-medium"\cf6 \strokec6 >\cf0 \strokec5 Student\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 main\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "feed"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf11 \strokec11 <!-- Controls Bar -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "topics"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col md:flex-row md:items-center justify-between gap-4 pb-8 border-b border-slate-200 mb-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl font-bold text-slate-900"\cf6 \strokec6 >\cf0 \strokec5 Stories & Explorations\cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-slate-500"\cf6 \strokec6 >\cf0 \strokec5 Discover recent writings or add your own thoughts\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3       \cf11 \strokec11 <!-- Search Input -->\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col sm:flex-row items-stretch sm:items-center gap-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative w-full sm:w-72"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "text"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "searchInput"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "Search by title or text..."\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 oninput\cf6 \strokec6 =\cf8 \strokec8 "handleSearch()"\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-600 text-sm transition-all"\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cb1 \
+\cb3           \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "openCreateModal()"\cf0 \strokec5  \cb1 \
+\cb3           \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-teal-600 hover:bg-teal-700 text-white px-4 py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 shadow-sm transition-all"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-4 h-4"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M12 4v16m8-8H4"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           New Post\cb1 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 <!-- Category Filter Pills -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar text-sm"\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "categoryFilters"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "filterCategory('All')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn active px-4 py-2 rounded-xl font-medium bg-teal-600 text-white transition-all"\cf6 \strokec6 >\cf0 \strokec5 All Posts\cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "filterCategory('Tech & Coding')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn px-4 py-2 rounded-xl font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all"\cf6 \strokec6 >\cf0 \strokec5 Tech & Coding\cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "filterCategory('Life Journey')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn px-4 py-2 rounded-xl font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all"\cf6 \strokec6 >\cf0 \strokec5 Life Journey\cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "filterCategory('Surat & Bhavnagar')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn px-4 py-2 rounded-xl font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all"\cf6 \strokec6 >\cf0 \strokec5 Surat & Bhavnagar\cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "filterCategory('College Notes')"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn px-4 py-2 rounded-xl font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all"\cf6 \strokec6 >\cf0 \strokec5 College Notes\cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postsGrid"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf11 \strokec11 <!-- Cards rendered via JavaScript -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 <!-- Empty State -->\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "emptyState"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hidden text-center py-16"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-8 h-8"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "1.5"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg font-bold text-slate-800"\cf6 \strokec6 >\cf0 \strokec5 No blog posts found\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-slate-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Try adjusting your search query or publish a new post!\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 main\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "createModal"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm hidden p-4 overflow-y-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white w-full max-w-2xl rounded-3xl shadow-2xl border border-slate-100 overflow-hidden my-8 animate-in fade-in zoom-in duration-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cb1 \
+\cb3       \cf11 \strokec11 <!-- Modal Header -->\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/50"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl font-bold text-slate-900"\cf6 \strokec6 >\cf0 \strokec5 Publish a New Blog\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-slate-500"\cf6 \strokec6 >\cf0 \strokec5 Share your thoughts, experiences, or project notes\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "closeCreateModal()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-8 h-8 rounded-full bg-slate-200/70 hover:bg-slate-300 flex items-center justify-center text-slate-600 transition-colors"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           &times;\cb1 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3       \cf11 \strokec11 <!-- Post Creation Form -->\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 form\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postForm"\cf0 \strokec5  \cf4 \strokec4 onsubmit\cf6 \strokec6 =\cf8 \strokec8 "handlePostSubmit(event)"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "p-6 space-y-5"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5"\cf6 \strokec6 >\cf0 \strokec5 Article Title *\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "text"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postTitle"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 required\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "e.g., My Journey Learning Web Development in Surat"\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-600 text-sm font-medium"\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-1 sm:grid-cols-2 gap-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5"\cf6 \strokec6 >\cf0 \strokec5 Category *\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 select\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postCategory"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 required\cf0 \cb1 \strokec5 \
+\cb3               \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-600 text-sm bg-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Tech & Coding"\cf6 \strokec6 >\cf0 \strokec5 Tech & Coding\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Life Journey"\cf6 \strokec6 >\cf0 \strokec5 Life Journey\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Surat & Bhavnagar"\cf6 \strokec6 >\cf0 \strokec5 Surat & Bhavnagar\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 option\cf0 \strokec5  \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "College Notes"\cf6 \strokec6 >\cf0 \strokec5 College Notes\cf6 \strokec6 </\cf7 \strokec7 option\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 select\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5"\cf6 \strokec6 >\cf0 \strokec5 Author Name *\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "text"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postAuthor"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 value\cf6 \strokec6 =\cf8 \strokec8 "Krishna Raninga"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 required\cf0 \cb1 \strokec5 \
+\cb3               \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-600 text-sm"\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- Image Input Section: File Upload or Image URL -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-xs font-bold uppercase tracking-wider text-slate-600"\cf6 \strokec6 >\cf0 \strokec5 Cover Image (Upload File or Enter URL)\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-1 sm:grid-cols-2 gap-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-slate-500 block mb-1"\cf6 \strokec6 >\cf0 \strokec5 Upload from Computer:\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "file"\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postFileInput"\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 accept\cf6 \strokec6 =\cf8 \strokec8 "image/*"\cf0 \cb1 \strokec5 \
+\cb3                 \cf4 \strokec4 onchange\cf6 \strokec6 =\cf8 \strokec8 "handleImageFile(event)"\cf0 \cb1 \strokec5 \
+\cb3                 \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full text-xs text-slate-500 file:mr-2 file:py-2 file:px-3 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 cursor-pointer"\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-slate-500 block mb-1"\cf6 \strokec6 >\cf0 \strokec5 Or paste online image URL:\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "url"\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postImageUrl"\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "https://images.unsplash.com/..."\cf0 \cb1 \strokec5 \
+\cb3                 \cf4 \strokec4 oninput\cf6 \strokec6 =\cf8 \strokec8 "handleImageUrlInput(this.value)"\cf0 \cb1 \strokec5 \
+\cb3                 \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30 text-xs"\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf11 \strokec11 <!-- Live Image Preview Box -->\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "imagePreviewContainer"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "hidden mt-2 p-2 border border-dashed border-teal-300 rounded-xl bg-teal-50/40 flex items-center gap-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 img\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "imagePreview"\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 ""\cf0 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf8 \strokec8 "Post Image Preview"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-16 h-16 object-cover rounded-lg shadow-sm"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-medium text-teal-900"\cf6 \strokec6 >\cf0 \strokec5 Image Attached\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "button"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "clearSelectedImage()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-red-500 hover:underline"\cf6 \strokec6 >\cf0 \strokec5 Remove Image\cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 label\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5"\cf6 \strokec6 >\cf0 \strokec5 Article Content *\cf6 \strokec6 </\cf7 \strokec7 label\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 textarea\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "postContent"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 rows\cf6 \strokec6 =\cf8 \strokec8 "6"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 required\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "Write your blog story here... You can write about your memories, coding projects, or experiences."\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-600 text-sm leading-relaxed"\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 ></\cf7 \strokec7 textarea\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-end gap-3 pt-3 border-t border-slate-100"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "button"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "closeCreateModal()"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 text-sm font-semibold hover:bg-slate-100"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             Cancel\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "submit"\cf0 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold shadow-md shadow-teal-500/20 active:scale-95 transition-all"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             Publish Post\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 form\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerModal"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fixed inset-0 z-50 flex items-center justify-center bg-slate-900/70 backdrop-blur-sm hidden p-4 overflow-y-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white w-full max-w-3xl rounded-3xl shadow-2xl border border-slate-100 overflow-hidden my-6 max-h-[90vh] flex flex-col animate-in fade-in zoom-in duration-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cb1 \
+\cb3       \cf11 \strokec11 <!-- Reader Header -->\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-6 py-4 border-b border-slate-100 flex items-center justify-between sticky top-0 bg-white/95 backdrop-blur-sm z-10"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerCategory"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-teal-100 text-teal-800"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           Category\cb1 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "closeReaderModal()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center font-bold"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           &times;\cb1 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3       \cf11 \strokec11 <!-- Reader Scrollable Body -->\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "p-6 md:p-8 overflow-y-auto space-y-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 h1\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerTitle"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug"\cf6 \strokec6 ></\cf7 \strokec7 h1\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-3 pb-4 border-b border-slate-100 text-xs text-slate-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-8 h-8 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             KR\cb1 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerAuthor"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-bold text-slate-800 text-sm"\cf6 \strokec6 ></\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf6 \strokec6 ><\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerDate"\cf6 \strokec6 ></\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5  &bull; \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerReadTime"\cf6 \strokec6 ></\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5  min read\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- Cover Image Container -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerImageWrapper"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "rounded-2xl overflow-hidden shadow-md max-h-96"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 img\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerImage"\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 ""\cf0 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf8 \strokec8 "Blog Featured Image"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full h-full object-cover"\cf0 \strokec5  \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- Content Body -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "readerContent"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-slate-700 leading-relaxed text-base whitespace-pre-line space-y-4"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- Reader Comments Section -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-10 pt-8 border-t border-slate-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 h4\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             Comments & Feedback\cb1 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "commentCountBadge"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs bg-slate-200 px-2 py-0.5 rounded-full font-semibold"\cf6 \strokec6 >\cf0 \strokec5 0\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 h4\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf11 \strokec11 <!-- Add Comment Form -->\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 form\cf0 \strokec5  \cf4 \strokec4 onsubmit\cf6 \strokec6 =\cf8 \strokec8 "handleAddComment(event)"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mb-6 space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-200"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "grid grid-cols-1 sm:grid-cols-2 gap-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf7 \strokec7 input\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "text"\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "commentAuthor"\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 required\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "Your Name (e.g., Professor / Student)"\cf0 \strokec5  \cb1 \
+\cb3                 \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-3.5 py-2 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30"\cf0 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 />\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 textarea\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "commentText"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 rows\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 required\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "Leave a comment on Krishna's post..."\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full px-3.5 py-2 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500/30"\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 ></\cf7 \strokec7 textarea\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "submit"\cf0 \strokec5  \cb1 \
+\cb3               \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-semibold shadow"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3               Post Comment\cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 form\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3           \cf11 \strokec11 <!-- Rendered Comments List -->\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "commentsList"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 <!-- Dynamic comments will be injected here -->\cf0 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "toast"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white text-xs font-semibold px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 pointer-events-none"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "toastIcon"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5 rounded-full bg-teal-500 flex items-center justify-center text-white"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u10003 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "toastMessage"\cf6 \strokec6 >\cf0 \strokec5 Success\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 footer\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white border-t border-slate-200 py-10 mt-16"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center space-y-4 sm:space-y-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm font-bold text-slate-800"\cf6 \strokec6 >\cf0 \strokec5 Krishna Raninga &mdash; Web Application Lab Submission\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-slate-500 mt-1"\cf6 \strokec6 >\cf0 \strokec5 Built with HTML5, Vanilla JavaScript, and Tailwind CSS. Bhavnagar &bull; Surat, Gujarat.\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-slate-400"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         Ready for GitHub Pages &bull; Client-side Storage Enabled\cb1 \
+\cb3       \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 footer\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 // Initial Default Seed Blogs tailored to Krishna Raninga's background\cf0 \cb1 \strokec5 \
+\cb3     \cf8 \strokec8 const\cf0 \strokec5  \cf13 \strokec13 DEFAULT_POSTS\cf0 \strokec5  = [\cb1 \
+\cb3       \{\cb1 \
+\cb3         id: \cf9 \strokec9 "post-1"\cf0 \strokec5 ,\cb1 \
+\cb3         title: \cf9 \strokec9 "From Bhavnagar to Surat: Embracing New Horizons in Gujarat"\cf0 \strokec5 ,\cb1 \
+\cb3         category: \cf9 \strokec9 "Surat & Bhavnagar"\cf0 \strokec5 ,\cb1 \
+\cb3         author: \cf9 \strokec9 "Krishna Raninga"\cf0 \strokec5 ,\cb1 \
+\cb3         date: \cf9 \strokec9 "September 28, 2026"\cf0 \strokec5 ,\cb1 \
+\cb3         readTime: \cf10 \strokec10 4\cf0 \strokec5 ,\cb1 \
+\cb3         likes: \cf10 \strokec10 18\cf0 \strokec5 ,\cb1 \
+\cb3         liked: \cf8 \strokec8 false\cf0 \strokec5 ,\cb1 \
+\cb3         image: \cf9 \strokec9 "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80"\cf0 \strokec5 ,\cb1 \
+\cb3         content: \cf9 \strokec9 `Growing up with roots in Bhavnagar, Gujarat gave me a strong appreciation for culture, community, and heritage. Bhavnagar taught me humility, dedication, and the value of perseverance.\\n\\nMoving my educational journey forward in Surat\'97the dynamic 'Diamond City' of Gujarat\'97has been a transformative leap. Surat is fast-paced, full of entrepreneurial spirit, and buzzing with tech aspirants. Balancing my roots from Bhavnagar with the modern dynamism of Surat has shaped how I view technology, architecture, and web applications. Every line of code I craft reflects that blend of steady traditions and innovative ambition.`\cf0 \strokec5 ,\cb1 \
+\cb3         comments: [\cb1 \
+\cb3           \{ author: \cf9 \strokec9 "Hiren Patel"\cf0 \strokec5 , text: \cf9 \strokec9 "Great story! Bhavnagar and Surat both have unique flavors."\cf0 \strokec5 , date: \cf9 \strokec9 "1 hour ago"\cf0 \strokec5  \}\cb1 \
+\cb3         ]\cb1 \
+\cb3       \},\cb1 \
+\cb3       \{\cb1 \
+\cb3         id: \cf9 \strokec9 "post-2"\cf0 \strokec5 ,\cb1 \
+\cb3         title: \cf9 \strokec9 "Why Pure HTML, CSS, and Vanilla JS Still Rule the Web"\cf0 \strokec5 ,\cb1 \
+\cb3         category: \cf9 \strokec9 "Tech & Coding"\cf0 \strokec5 ,\cb1 \
+\cb3         author: \cf9 \strokec9 "Krishna Raninga"\cf0 \strokec5 ,\cb1 \
+\cb3         date: \cf9 \strokec9 "September 25, 2026"\cf0 \strokec5 ,\cb1 \
+\cb3         readTime: \cf10 \strokec10 3\cf0 \strokec5 ,\cb1 \
+\cb3         likes: \cf10 \strokec10 24\cf0 \strokec5 ,\cb1 \
+\cb3         liked: \cf8 \strokec8 false\cf0 \strokec5 ,\cb1 \
+\cb3         image: \cf9 \strokec9 "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80"\cf0 \strokec5 ,\cb1 \
+\cb3         content: \cf9 \strokec9 `In modern web development, many developers jump straight into hefty frameworks like React, Next.js, or Vue without truly mastering the foundation. However, building interactive applications using pure HTML5, CSS3, and JavaScript teaches you how the DOM truly works.\\n\\nFrom handling event listeners, parsing localStorage, manipulating layout engines, to handling file readers for image uploads directly on the client side\'97vanilla JavaScript gives you complete command over the browser. This project is a testament that responsive and smooth interactive web applications do not strictly require heavy node runtimes or complex setups.`\cf0 \strokec5 ,\cb1 \
+\cb3         comments: []\cb1 \
+\cb3       \},\cb1 \
+\cb3       \{\cb1 \
+\cb3         id: \cf9 \strokec9 "post-3"\cf0 \strokec5 ,\cb1 \
+\cb3         title: \cf9 \strokec9 "Reflecting on College Web Development Lab Submissions"\cf0 \strokec5 ,\cb1 \
+\cb3         category: \cf9 \strokec9 "College Notes"\cf0 \strokec5 ,\cb1 \
+\cb3         author: \cf9 \strokec9 "Krishna Raninga"\cf0 \strokec5 ,\cb1 \
+\cb3         date: \cf9 \strokec9 "September 20, 2026"\cf0 \strokec5 ,\cb1 \
+\cb3         readTime: \cf10 \strokec10 5\cf0 \strokec5 ,\cb1 \
+\cb3         likes: \cf10 \strokec10 12\cf0 \strokec5 ,\cb1 \
+\cb3         liked: \cf8 \strokec8 false\cf0 \strokec5 ,\cb1 \
+\cb3         image: \cf9 \strokec9 "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1000&q=80"\cf0 \strokec5 ,\cb1 \
+\cb3         content: \cf9 \strokec9 `Preparing for practical submissions always comes with excitement and pressure. Building this blog application helped me crystallize several concepts from our syllabus:\\n\\n1. Form handling and user input validation.\\n2. LocalStorage persistence for saving blogs permanently in the browser session.\\n3. Dynamic DOM node creation and event delegation.\\n4. Responsive UI engineering for screens from mobile smartphones to desktops.\\n\\nPutting all of this together under deadline pressure has been a rewarding challenge. Looking forward to our evaluation!`\cf0 \strokec5 ,\cb1 \
+\cb3         comments: [\cb1 \
+\cb3           \{ author: \cf9 \strokec9 "Faculty Evaluator"\cf0 \strokec5 , text: \cf9 \strokec9 "Impressive work on the clean layout and interactive features!"\cf0 \strokec5 , date: \cf9 \strokec9 "Yesterday"\cf0 \strokec5  \}\cb1 \
+\cb3         ]\cb1 \
+\cb3       \}\cb1 \
+\cb3     ];\cb1 \
+\
+\cb3     \cf11 \strokec11 // App State\cf0 \cb1 \strokec5 \
+\cb3     \cf8 \strokec8 let\cf0 \strokec5  posts = [];\cb1 \
+\cb3     \cf8 \strokec8 let\cf0 \strokec5  currentFilter = \cf9 \strokec9 "All"\cf0 \strokec5 ;\cb1 \
+\cb3     \cf8 \strokec8 let\cf0 \strokec5  searchQuery = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3     \cf8 \strokec8 let\cf0 \strokec5  activeReaderPostId = \cf8 \strokec8 null\cf0 \strokec5 ;\cb1 \
+\cb3     \cf8 \strokec8 let\cf0 \strokec5  currentEncodedImage = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  initBlogApp() \{\cb1 \
+\cb3       \cf8 \strokec8 try\cf0 \strokec5  \{\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  stored = localStorage.getItem(\cf9 \strokec9 "krishna_blog_posts"\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 if\cf0 \strokec5  (stored) \{\cb1 \
+\cb3           posts = \cf13 \strokec13 JSON\cf0 \strokec5 .parse(stored);\cb1 \
+\cb3         \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3           posts = \cf13 \strokec13 DEFAULT_POSTS\cf0 \strokec5 ;\cb1 \
+\cb3           saveToLocalStorage();\cb1 \
+\cb3         \}\cb1 \
+\cb3       \} \cf8 \strokec8 catch\cf0 \strokec5  (err) \{\cb1 \
+\cb3         posts = \cf13 \strokec13 DEFAULT_POSTS\cf0 \strokec5 ;\cb1 \
+\cb3       \}\cb1 \
+\cb3       renderBlogFeed();\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  saveToLocalStorage() \{\cb1 \
+\cb3       \cf8 \strokec8 try\cf0 \strokec5  \{\cb1 \
+\cb3         localStorage.setItem(\cf9 \strokec9 "krishna_blog_posts"\cf0 \strokec5 , \cf13 \strokec13 JSON\cf0 \strokec5 .stringify(posts));\cb1 \
+\cb3       \} \cf8 \strokec8 catch\cf0 \strokec5  (e) \{\cb1 \
+\cb3         console.warn(\cf9 \strokec9 "Storage quota exceeded or disabled:"\cf0 \strokec5 , e);\cb1 \
+\cb3       \}\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  renderBlogFeed() \{\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  container = document.getElementById(\cf9 \strokec9 "postsGrid"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  emptyState = document.getElementById(\cf9 \strokec9 "emptyState"\cf0 \strokec5 );\cb1 \
+\cb3       container.innerHTML = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  filtered = posts.filter(post => \{\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  matchCategory = currentFilter === \cf9 \strokec9 "All"\cf0 \strokec5  || post.category === currentFilter;\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  matchSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || \cb1 \
+\cb3                             post.content.toLowerCase().includes(searchQuery.toLowerCase()) ||\cb1 \
+\cb3                             post.author.toLowerCase().includes(searchQuery.toLowerCase());\cb1 \
+\cb3         \cf8 \strokec8 return\cf0 \strokec5  matchCategory && matchSearch;\cb1 \
+\cb3       \});\cb1 \
+\
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (filtered.length === \cf10 \strokec10 0\cf0 \strokec5 ) \{\cb1 \
+\cb3         emptyState.classList.remove(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3         emptyState.classList.add(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       \}\cb1 \
+\
+\cb3       filtered.forEach(post => \{\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  card = document.createElement(\cf9 \strokec9 "article"\cf0 \strokec5 );\cb1 \
+\cb3         card.className = \cf9 \strokec9 "bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"\cf0 \strokec5 ;\cb1 \
+\
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  previewImg = post.image || \cf9 \strokec9 "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80"\cf0 \strokec5 ;\cb1 \
+\
+\cb3         card.innerHTML = \cf9 \strokec9 `\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf9 \cb3 \strokec9           <div class="relative h-52 overflow-hidden bg-slate-100">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             <img \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               src="\cf0 \strokec5 $\{previewImg\}\cf9 \strokec9 " \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               alt="\cf0 \strokec5 $\{post.title\}\cf9 \strokec9 " \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               onerror="this.src='https://placehold.co/600x400/0d9488/ffffff?text=Krishna+Blog'" \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             />\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             <div class="absolute top-4 left-4">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               <span class="px-3 py-1 text-xs font-bold rounded-full bg-white/90 backdrop-blur-md text-teal-700 shadow-sm">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 \cf0 \strokec5 $\{post.category\}\cb1 \
+\cf9 \cb3 \strokec9               </span>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             </div>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             \cf0 \strokec5 $\{post.id.startsWith(\cf9 \strokec9 "custom-"\cf0 \strokec5 ) ? \cf9 \strokec9 `\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               <button \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 onclick="deletePost('\cf0 \strokec5 $\{post.id\}\cf9 \strokec9 ', event)" \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 title="Delete Post" \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 class="absolute top-4 right-4 w-8 h-8 rounded-full bg-red-600/80 hover:bg-red-700 text-white flex items-center justify-center transition-all shadow-md">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               </button>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             `\cf0 \strokec5  : \cf9 \strokec9 ''\cf0 \strokec5 \}\cb1 \
+\cf9 \cb3 \strokec9           </div>\cf0 \cb1 \strokec5 \
+\
+\cf9 \cb3 \strokec9           <div class="p-6 flex-1 flex flex-col justify-between">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             <div>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               <div class="flex items-center justify-between text-xs text-slate-400 mb-2 font-medium">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 <span>\cf0 \strokec5 $\{post.date\}\cf9 \strokec9 </span>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 <span>\cf0 \strokec5 $\{post.readTime || \cf10 \strokec10 3\cf0 \strokec5 \}\cf9 \strokec9  min read</span>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               </div>\cf0 \cb1 \strokec5 \
+\
+\cf9 \cb3 \strokec9               <h3 class="text-xl font-bold text-slate-900 group-hover:text-teal-600 transition-colors line-clamp-2 mb-3">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 \cf0 \strokec5 $\{post.title\}\cb1 \
+\cf9 \cb3 \strokec9               </h3>\cf0 \cb1 \strokec5 \
+\
+\cf9 \cb3 \strokec9               <p class="text-slate-600 text-sm line-clamp-3 leading-relaxed mb-4">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 \cf0 \strokec5 $\{post.content\}\cb1 \
+\cf9 \cb3 \strokec9               </p>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             </div>\cf0 \cb1 \strokec5 \
+\
+\cf9 \cb3 \strokec9             <div class="pt-4 border-t border-slate-100 flex items-center justify-between">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               <div class="flex items-center gap-2">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 <div class="w-7 h-7 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   \cf0 \strokec5 $\{post.author.charAt(\cf10 \strokec10 0\cf0 \strokec5 )\}\cb1 \
+\cf9 \cb3 \strokec9                 </div>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 <span class="text-xs font-semibold text-slate-700">\cf0 \strokec5 $\{post.author\}\cf9 \strokec9 </span>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               </div>\cf0 \cb1 \strokec5 \
+\
+\cf9 \cb3 \strokec9               <div class="flex items-center gap-3">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 <button \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   onclick="toggleLike('\cf0 \strokec5 $\{post.id\}\cf9 \strokec9 ', event)" \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   class="flex items-center gap-1 text-xs font-medium \cf0 \strokec5 $\{post.liked ? \cf9 \strokec9 'text-rose-600'\cf0 \strokec5  : \cf9 \strokec9 'text-slate-500 hover:text-rose-500'\cf0 \strokec5 \}\cf9 \strokec9  transition-colors">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   <svg class="w-4 h-4 \cf0 \strokec5 $\{post.liked ? \cf9 \strokec9 'fill-current'\cf0 \strokec5  : \cf9 \strokec9 'fill-none'\cf0 \strokec5 \}\cf9 \strokec9 " stroke="currentColor" viewBox="0 0 24 24">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   </svg>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   <span id="like-count-\cf0 \strokec5 $\{post.id\}\cf9 \strokec9 ">\cf0 \strokec5 $\{post.likes || \cf10 \strokec10 0\cf0 \strokec5 \}\cf9 \strokec9 </span>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 </button>\cf0 \cb1 \strokec5 \
+\
+\cf9 \cb3 \strokec9                 <button \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   onclick="openReaderModal('\cf0 \strokec5 $\{post.id\}\cf9 \strokec9 ')" \cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   class="px-3.5 py-1.5 rounded-xl bg-teal-50 hover:bg-teal-100 text-teal-800 text-xs font-bold transition-all">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                   Read &rarr;\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9                 </button>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9               </div>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             </div>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9           </div>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9         `\cf0 \strokec5 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3         container.appendChild(card);\cb1 \
+\cb3       \});\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  filterCategory(cat) \{\cb1 \
+\cb3       currentFilter = cat;\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  buttons = document.querySelectorAll(\cf9 \strokec9 ".category-btn"\cf0 \strokec5 );\cb1 \
+\cb3       buttons.forEach(btn => \{\cb1 \
+\cb3         \cf8 \strokec8 if\cf0 \strokec5  (btn.innerText.includes(cat) || (cat === \cf9 \strokec9 'All'\cf0 \strokec5  && btn.innerText.includes(\cf9 \strokec9 'All'\cf0 \strokec5 ))) \{\cb1 \
+\cb3           btn.className = \cf9 \strokec9 "category-btn active px-4 py-2 rounded-xl font-medium bg-teal-600 text-white transition-all"\cf0 \strokec5 ;\cb1 \
+\cb3         \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3           btn.className = \cf9 \strokec9 "category-btn px-4 py-2 rounded-xl font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all"\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3       \});\cb1 \
+\cb3       renderBlogFeed();\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  handleSearch() \{\cb1 \
+\cb3       searchQuery = document.getElementById(\cf9 \strokec9 "searchInput"\cf0 \strokec5 ).value.trim();\cb1 \
+\cb3       renderBlogFeed();\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  handleImageFile(event) \{\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  file = event.target.files[\cf10 \strokec10 0\cf0 \strokec5 ];\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (file) \{\cb1 \
+\cb3         \cf8 \strokec8 if\cf0 \strokec5  (file.size > \cf10 \strokec10 2\cf0 \strokec5  * \cf10 \strokec10 1024\cf0 \strokec5  * \cf10 \strokec10 1024\cf0 \strokec5 ) \{\cb1 \
+\cb3           showToast(\cf9 \strokec9 "Image too large. Please select under 2MB."\cf0 \strokec5 , \cf8 \strokec8 true\cf0 \strokec5 );\cb1 \
+\cb3           event.target.value = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3           \cf8 \strokec8 return\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  reader = \cf8 \strokec8 new\cf0 \strokec5  \cf13 \strokec13 FileReader\cf0 \strokec5 ();\cb1 \
+\cb3         reader.onload = \cf8 \strokec8 function\cf0 \strokec5 (e) \{\cb1 \
+\cb3           currentEncodedImage = e.target.result;\cb1 \
+\cb3           displayImagePreview(currentEncodedImage);\cb1 \
+\cb3           document.getElementById(\cf9 \strokec9 "postImageUrl"\cf0 \strokec5 ).value = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3         \};\cb1 \
+\cb3         reader.readAsDataURL(file);\cb1 \
+\cb3       \}\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  handleImageUrlInput(url) \{\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (url.trim() !== \cf9 \strokec9 ""\cf0 \strokec5 ) \{\cb1 \
+\cb3         currentEncodedImage = url.trim();\cb1 \
+\cb3         displayImagePreview(currentEncodedImage);\cb1 \
+\cb3         document.getElementById(\cf9 \strokec9 "postFileInput"\cf0 \strokec5 ).value = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3       \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3         clearSelectedImage();\cb1 \
+\cb3       \}\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  displayImagePreview(source) \{\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  container = document.getElementById(\cf9 \strokec9 "imagePreviewContainer"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  previewImg = document.getElementById(\cf9 \strokec9 "imagePreview"\cf0 \strokec5 );\cb1 \
+\cb3       previewImg.src = source;\cb1 \
+\cb3       container.classList.remove(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  clearSelectedImage() \{\cb1 \
+\cb3       currentEncodedImage = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "postFileInput"\cf0 \strokec5 ).value = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "postImageUrl"\cf0 \strokec5 ).value = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "imagePreviewContainer"\cf0 \strokec5 ).classList.add(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  handlePostSubmit(e) \{\cb1 \
+\cb3       e.preventDefault();\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  title = document.getElementById(\cf9 \strokec9 "postTitle"\cf0 \strokec5 ).value.trim();\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  category = document.getElementById(\cf9 \strokec9 "postCategory"\cf0 \strokec5 ).value;\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  author = document.getElementById(\cf9 \strokec9 "postAuthor"\cf0 \strokec5 ).value.trim() || \cf9 \strokec9 "Krishna Raninga"\cf0 \strokec5 ;\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  content = document.getElementById(\cf9 \strokec9 "postContent"\cf0 \strokec5 ).value.trim();\cb1 \
+\
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (!title || !content) \{\cb1 \
+\cb3         showToast(\cf9 \strokec9 "Please fill in the required fields."\cf0 \strokec5 , \cf8 \strokec8 true\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 return\cf0 \strokec5 ;\cb1 \
+\cb3       \}\cb1 \
+\
+\cb3       \cf11 \strokec11 // Estimate read time based on word count\cf0 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  wordCount = content.split(\cf7 \strokec7 /\\s+/\cf0 \strokec5 ).length;\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  readTime = \cf13 \strokec13 Math\cf0 \strokec5 .max(\cf10 \strokec10 1\cf0 \strokec5 , \cf13 \strokec13 Math\cf0 \strokec5 .ceil(wordCount / \cf10 \strokec10 180\cf0 \strokec5 ));\cb1 \
+\
+\cb3       \cf11 \strokec11 // Fallback default thematic images if none selected\cf0 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  defaultCategoryPhotos = \{\cb1 \
+\cb3         \cf9 \strokec9 "Tech & Coding"\cf0 \strokec5 : \cf9 \strokec9 "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80"\cf0 \strokec5 ,\cb1 \
+\cb3         \cf9 \strokec9 "Life Journey"\cf0 \strokec5 : \cf9 \strokec9 "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80"\cf0 \strokec5 ,\cb1 \
+\cb3         \cf9 \strokec9 "Surat & Bhavnagar"\cf0 \strokec5 : \cf9 \strokec9 "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80"\cf0 \strokec5 ,\cb1 \
+\cb3         \cf9 \strokec9 "College Notes"\cf0 \strokec5 : \cf9 \strokec9 "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=80"\cf0 \cb1 \strokec5 \
+\cb3       \};\cb1 \
+\
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  finalImage = currentEncodedImage || defaultCategoryPhotos[category] || \cf9 \strokec9 "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=80"\cf0 \strokec5 ;\cb1 \
+\
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  newPost = \{\cb1 \
+\cb3         id: \cf9 \strokec9 "custom-"\cf0 \strokec5  + \cf13 \strokec13 Date\cf0 \strokec5 .now(),\cb1 \
+\cb3         title: title,\cb1 \
+\cb3         category: category,\cb1 \
+\cb3         author: author,\cb1 \
+\cb3         date: \cf8 \strokec8 new\cf0 \strokec5  \cf13 \strokec13 Date\cf0 \strokec5 ().toLocaleDateString(\cf9 \strokec9 "en-US"\cf0 \strokec5 , \{ month: \cf9 \strokec9 "short"\cf0 \strokec5 , day: \cf9 \strokec9 "numeric"\cf0 \strokec5 , year: \cf9 \strokec9 "numeric"\cf0 \strokec5  \}),\cb1 \
+\cb3         readTime: readTime,\cb1 \
+\cb3         likes: \cf10 \strokec10 0\cf0 \strokec5 ,\cb1 \
+\cb3         liked: \cf8 \strokec8 false\cf0 \strokec5 ,\cb1 \
+\cb3         image: finalImage,\cb1 \
+\cb3         content: content,\cb1 \
+\cb3         comments: []\cb1 \
+\cb3       \};\cb1 \
+\
+\cb3       \cf11 \strokec11 // Add to front of posts\cf0 \cb1 \strokec5 \
+\cb3       posts.unshift(newPost);\cb1 \
+\cb3       saveToLocalStorage();\cb1 \
+\cb3       renderBlogFeed();\cb1 \
+\
+\cb3       closeCreateModal();\cb1 \
+\cb3       showToast(\cf9 \strokec9 "Post published successfully!"\cf0 \strokec5 );\cb1 \
+\cb3       \cb1 \
+\cb3       \cf11 \strokec11 // Auto-scroll to feed to view new post\cf0 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  feedElement = document.getElementById(\cf9 \strokec9 "feed"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (feedElement) \{\cb1 \
+\cb3         feedElement.scrollIntoView(\{ behavior: \cf9 \strokec9 'smooth'\cf0 \strokec5  \});\cb1 \
+\cb3       \}\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  toggleLike(postId, event) \{\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (event) event.stopPropagation();\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  post = posts.find(p => p.id === postId);\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (!post) \cf8 \strokec8 return\cf0 \strokec5 ;\cb1 \
+\
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (post.liked) \{\cb1 \
+\cb3         post.likes = \cf13 \strokec13 Math\cf0 \strokec5 .max(\cf10 \strokec10 0\cf0 \strokec5 , (post.likes || \cf10 \strokec10 1\cf0 \strokec5 ) - \cf10 \strokec10 1\cf0 \strokec5 );\cb1 \
+\cb3         post.liked = \cf8 \strokec8 false\cf0 \strokec5 ;\cb1 \
+\cb3       \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3         post.likes = (post.likes || \cf10 \strokec10 0\cf0 \strokec5 ) + \cf10 \strokec10 1\cf0 \strokec5 ;\cb1 \
+\cb3         post.liked = \cf8 \strokec8 true\cf0 \strokec5 ;\cb1 \
+\cb3       \}\cb1 \
+\
+\cb3       saveToLocalStorage();\cb1 \
+\cb3       renderBlogFeed();\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  deletePost(postId, event) \{\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (event) event.stopPropagation();\cb1 \
+\cb3       posts = posts.filter(p => p.id !== postId);\cb1 \
+\cb3       saveToLocalStorage();\cb1 \
+\cb3       renderBlogFeed();\cb1 \
+\cb3       showToast(\cf9 \strokec9 "Post removed."\cf0 \strokec5 );\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  openReaderModal(postId) \{\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  post = posts.find(p => p.id === postId);\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (!post) \cf8 \strokec8 return\cf0 \strokec5 ;\cb1 \
+\
+\cb3       activeReaderPostId = postId;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "readerTitle"\cf0 \strokec5 ).innerText = post.title;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "readerCategory"\cf0 \strokec5 ).innerText = post.category;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "readerAuthor"\cf0 \strokec5 ).innerText = post.author;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "readerDate"\cf0 \strokec5 ).innerText = post.date;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "readerReadTime"\cf0 \strokec5 ).innerText = post.readTime || \cf10 \strokec10 3\cf0 \strokec5 ;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "readerContent"\cf0 \strokec5 ).innerText = post.content;\cb1 \
+\
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  imgWrapper = document.getElementById(\cf9 \strokec9 "readerImageWrapper"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  readerImg = document.getElementById(\cf9 \strokec9 "readerImage"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (post.image) \{\cb1 \
+\cb3         readerImg.src = post.image;\cb1 \
+\cb3         imgWrapper.classList.remove(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3         imgWrapper.classList.add(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       \}\cb1 \
+\
+\cb3       renderComments(post.comments || []);\cb1 \
+\
+\cb3       document.getElementById(\cf9 \strokec9 "readerModal"\cf0 \strokec5 ).classList.remove(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       document.body.classList.add(\cf9 \strokec9 "overflow-hidden"\cf0 \strokec5 );\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  closeReaderModal() \{\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "readerModal"\cf0 \strokec5 ).classList.add(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       document.body.classList.remove(\cf9 \strokec9 "overflow-hidden"\cf0 \strokec5 );\cb1 \
+\cb3       activeReaderPostId = \cf8 \strokec8 null\cf0 \strokec5 ;\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  renderComments(comments) \{\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  list = document.getElementById(\cf9 \strokec9 "commentsList"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  countBadge = document.getElementById(\cf9 \strokec9 "commentCountBadge"\cf0 \strokec5 );\cb1 \
+\cb3       list.innerHTML = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3       countBadge.innerText = comments.length;\cb1 \
+\
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (comments.length === \cf10 \strokec10 0\cf0 \strokec5 ) \{\cb1 \
+\cb3         list.innerHTML = \cf9 \strokec9 `<p class="text-xs text-slate-400 italic">No comments yet. Be the first to leave one!</p>`\cf0 \strokec5 ;\cb1 \
+\cb3         \cf8 \strokec8 return\cf0 \strokec5 ;\cb1 \
+\cb3       \}\cb1 \
+\
+\cb3       comments.forEach(c => \{\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  item = document.createElement(\cf9 \strokec9 "div"\cf0 \strokec5 );\cb1 \
+\cb3         item.className = \cf9 \strokec9 "p-3 rounded-xl bg-slate-50 border border-slate-200/80 text-xs"\cf0 \strokec5 ;\cb1 \
+\cb3         item.innerHTML = \cf9 \strokec9 `\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf9 \cb3 \strokec9           <div class="flex items-center justify-between mb-1">\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             <span class="font-bold text-slate-800">\cf0 \strokec5 $\{escapeHtml(c.author)\}\cf9 \strokec9 </span>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9             <span class="text-slate-400 text-[10px]">\cf0 \strokec5 $\{c.date || \cf9 \strokec9 "Just now"\cf0 \strokec5 \}\cf9 \strokec9 </span>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9           </div>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9           <p class="text-slate-600">\cf0 \strokec5 $\{escapeHtml(c.text)\}\cf9 \strokec9 </p>\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9         `\cf0 \strokec5 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3         list.appendChild(item);\cb1 \
+\cb3       \});\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  handleAddComment(e) \{\cb1 \
+\cb3       e.preventDefault();\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (!activeReaderPostId) \cf8 \strokec8 return\cf0 \strokec5 ;\cb1 \
+\
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  authorInput = document.getElementById(\cf9 \strokec9 "commentAuthor"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  textInput = document.getElementById(\cf9 \strokec9 "commentText"\cf0 \strokec5 );\cb1 \
+\
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  authorVal = authorInput.value.trim();\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  textVal = textInput.value.trim();\cb1 \
+\
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (!authorVal || !textVal) \cf8 \strokec8 return\cf0 \strokec5 ;\cb1 \
+\
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  post = posts.find(p => p.id === activeReaderPostId);\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (post) \{\cb1 \
+\cb3         \cf8 \strokec8 if\cf0 \strokec5  (!post.comments) post.comments = [];\cb1 \
+\cb3         post.comments.push(\{\cb1 \
+\cb3           author: authorVal,\cb1 \
+\cb3           text: textVal,\cb1 \
+\cb3           date: \cf9 \strokec9 "Just now"\cf0 \cb1 \strokec5 \
+\cb3         \});\cb1 \
+\
+\cb3         saveToLocalStorage();\cb1 \
+\cb3         renderComments(post.comments);\cb1 \
+\cb3         textInput.value = \cf9 \strokec9 ""\cf0 \strokec5 ;\cb1 \
+\cb3         showToast(\cf9 \strokec9 "Comment posted!"\cf0 \strokec5 );\cb1 \
+\cb3       \}\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf11 \strokec11 // Modal Visibility Helpers\cf0 \cb1 \strokec5 \
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  openCreateModal() \{\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "postForm"\cf0 \strokec5 ).reset();\cb1 \
+\cb3       clearSelectedImage();\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "postAuthor"\cf0 \strokec5 ).value = \cf9 \strokec9 "Krishna Raninga"\cf0 \strokec5 ;\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "createModal"\cf0 \strokec5 ).classList.remove(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       document.body.classList.add(\cf9 \strokec9 "overflow-hidden"\cf0 \strokec5 );\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  closeCreateModal() \{\cb1 \
+\cb3       document.getElementById(\cf9 \strokec9 "createModal"\cf0 \strokec5 ).classList.add(\cf9 \strokec9 "hidden"\cf0 \strokec5 );\cb1 \
+\cb3       document.body.classList.remove(\cf9 \strokec9 "overflow-hidden"\cf0 \strokec5 );\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  showToast(message, isError = \cf8 \strokec8 false\cf0 \strokec5 ) \{\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  toast = document.getElementById(\cf9 \strokec9 "toast"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  toastMsg = document.getElementById(\cf9 \strokec9 "toastMessage"\cf0 \strokec5 );\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  toastIcon = document.getElementById(\cf9 \strokec9 "toastIcon"\cf0 \strokec5 );\cb1 \
+\
+\cb3       toastMsg.innerText = message;\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (isError) \{\cb1 \
+\cb3         toastIcon.className = \cf9 \strokec9 "w-5 h-5 rounded-full bg-rose-500 flex items-center justify-center text-white"\cf0 \strokec5 ;\cb1 \
+\cb3         toastIcon.innerText = \cf9 \strokec9 "!"\cf0 \strokec5 ;\cb1 \
+\cb3       \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3         toastIcon.className = \cf9 \strokec9 "w-5 h-5 rounded-full bg-teal-500 flex items-center justify-center text-white"\cf0 \strokec5 ;\cb1 \
+\cb3         toastIcon.innerText = \cf9 \strokec9 "\uc0\u10003 "\cf0 \strokec5 ;\cb1 \
+\cb3       \}\cb1 \
+\
+\cb3       toast.classList.remove(\cf9 \strokec9 "translate-y-20"\cf0 \strokec5 , \cf9 \strokec9 "opacity-0"\cf0 \strokec5 );\cb1 \
+\cb3       setTimeout(() => \{\cb1 \
+\cb3         toast.classList.add(\cf9 \strokec9 "translate-y-20"\cf0 \strokec5 , \cf9 \strokec9 "opacity-0"\cf0 \strokec5 );\cb1 \
+\cb3       \}, \cf10 \strokec10 3000\cf0 \strokec5 );\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf8 \strokec8 function\cf0 \strokec5  escapeHtml(text) \{\cb1 \
+\cb3       \cf8 \strokec8 const\cf0 \strokec5  div = document.createElement(\cf9 \strokec9 'div'\cf0 \strokec5 );\cb1 \
+\cb3       div.textContent = text;\cb1 \
+\cb3       \cf8 \strokec8 return\cf0 \strokec5  div.innerHTML;\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3     \cf11 \strokec11 // Initialize application on DOM load\cf0 \cb1 \strokec5 \
+\cb3     window.addEventListener(\cf9 \strokec9 "DOMContentLoaded"\cf0 \strokec5 , initBlogApp);\cb1 \
+\
+\cb3     \cf11 \strokec11 // Close modals on Esc key\cf0 \cb1 \strokec5 \
+\cb3     window.addEventListener(\cf9 \strokec9 "keydown"\cf0 \strokec5 , (e) => \{\cb1 \
+\cb3       \cf8 \strokec8 if\cf0 \strokec5  (e.key === \cf9 \strokec9 "Escape"\cf0 \strokec5 ) \{\cb1 \
+\cb3         closeCreateModal();\cb1 \
+\cb3         closeReaderModal();\cb1 \
+\cb3       \}\cb1 \
+\cb3     \});\cb1 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 body\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 html\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+}
